@@ -51,18 +51,23 @@
                     <h3 class="text-lg font-semibold text-gray-800 dark:text-white/90">
                       All Companies
                     </h3>
-              
+
                     <div class="flex flex-col gap-3 sm:flex-row sm:items-center" data-dashlane-rid="b674786c27d78b44">
-                      <button class="flex w-full items-center justify-center gap-2 rounded-lg bg-brand-500 px-4 py-3 text-sm font-medium text-white shadow-theme-xs hover:bg-brand-600 sm:w-auto" data-dashlane-label="true" data-dashlane-rid="859d67d65dc0427f">
-                        <svg class="fill-current" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M9.2502 4.99951C9.2502 4.5853 9.58599 4.24951 10.0002 4.24951C10.4144 4.24951 10.7502 4.5853 10.7502 4.99951V9.24971H15.0006C15.4148 9.24971 15.7506 9.5855 15.7506 9.99971C15.7506 10.4139 15.4148 10.7497 15.0006 10.7497H10.7502V15.0001C10.7502 15.4143 10.4144 15.7501 10.0002 15.7501C9.58599 15.7501 9.2502 15.4143 9.2502 15.0001V10.7497H5C4.58579 10.7497 4.25 10.4139 4.25 9.99971C4.25 9.5855 4.58579 9.24971 5 9.24971H9.2502V4.99951Z" fill=""></path>
+                      <a href="company-create.html"
+                        class="flex w-full items-center justify-center gap-2 rounded-lg bg-brand-500 px-4 py-3 text-sm font-medium text-white shadow-theme-xs hover:bg-brand-600 sm:w-auto"
+                        data-dashlane-label="true" data-dashlane-rid="859d67d65dc0427f">
+                        <svg class="fill-current" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.2502 4.99951C9.2502 4.5853 9.58599 4.24951 10.0002 4.24951C10.4144 4.24951 10.7502 4.5853 10.7502 4.99951V9.24971H15.0006C15.4148 9.24971 15.7506 9.5855 15.7506 9.99971C15.7506 10.4139 15.4148 10.7497 15.0006 10.7497H10.7502V15.0001C10.7502 15.4143 10.4144 15.7501 10.0002 15.7501C9.58599 15.7501 9.2502 15.4143 9.2502 15.0001V10.7497H5C4.58579 10.7497 4.25 10.4139 4.25 9.99971C4.25 9.5855 4.58579 9.24971 5 9.24971H9.2502V4.99951Z"
+                            fill=""></path>
                         </svg>
                         Add New Company
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
-                
+
                 <div class="border-t border-gray-100 p-5 dark:border-gray-800 sm:p-6">
                   <!-- DataTable Two -->
                   <div x-data="dataTableTwo()"
@@ -114,38 +119,13 @@
                     <div class="max-w-full overflow-x-auto">
                       <div class="min-w-[1102px]">
                         <!-- table header start -->
-                        <div class="grid grid-cols-12 border-t border-gray-200 dark:border-gray-800">
+                        <div class="grid grid-cols-16 border-t border-gray-200 dark:border-gray-800">
                           <div
                             class="col-span-2 flex items-center border-r border-gray-200 px-4 py-3 dark:border-gray-800">
                             <div class="flex w-full cursor-pointer items-center justify-between"
-                              @click="sortBy('user')">
+                              @click="sortBy('name')">
                               <p class="text-theme-xs font-medium text-gray-700 dark:text-gray-400">
-                                User
-                              </p>
-
-                              <span class="flex flex-col gap-0.5">
-                                <svg class="fill-gray-300 dark:fill-gray-700" width="8" height="5" viewBox="0 0 8 5"
-                                  fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path
-                                    d="M4.40962 0.585167C4.21057 0.300808 3.78943 0.300807 3.59038 0.585166L1.05071 4.21327C0.81874 4.54466 1.05582 5 1.46033 5H6.53967C6.94418 5 7.18126 4.54466 6.94929 4.21327L4.40962 0.585167Z"
-                                    fill=""></path>
-                                </svg>
-
-                                <svg class="fill-gray-300 dark:fill-gray-700" width="8" height="5" viewBox="0 0 8 5"
-                                  fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path
-                                    d="M4.40962 4.41483C4.21057 4.69919 3.78943 4.69919 3.59038 4.41483L1.05071 0.786732C0.81874 0.455343 1.05582 0 1.46033 0H6.53967C6.94418 0 7.18126 0.455342 6.94929 0.786731L4.40962 4.41483Z"
-                                    fill=""></path>
-                                </svg>
-                              </span>
-                            </div>
-                          </div>
-                          <div
-                            class="col-span-2 flex items-center border-r border-gray-200 px-4 py-3 dark:border-gray-800">
-                            <div class="flex w-full cursor-pointer items-center justify-between"
-                              @click="sortBy('position')">
-                              <p class="text-theme-xs font-medium text-gray-700 dark:text-gray-400">
-                                Position
+                                Name
                               </p>
 
                               <span class="flex flex-col gap-0.5">
@@ -167,10 +147,9 @@
                           </div>
                           <div
                             class="col-span-2 flex items-center border-r border-gray-200 px-4 py-3 dark:border-gray-800">
-                            <div class="flex w-full cursor-pointer items-center justify-between"
-                              @click="sortBy('office')">
+                            <div class="flex w-full cursor-pointer items-center justify-between">
                               <p class="text-theme-xs font-medium text-gray-700 dark:text-gray-400">
-                                Office
+                                Address
                               </p>
 
                               <span class="flex flex-col gap-0.5">
@@ -191,10 +170,82 @@
                             </div>
                           </div>
                           <div
-                            class="col-span-1 flex items-center border-r border-gray-200 px-4 py-3 dark:border-gray-800">
-                            <div class="flex w-full cursor-pointer items-center justify-between" @click="sortBy('age')">
+                            class="col-span-2 flex items-center border-r border-gray-200 px-4 py-3 dark:border-gray-800">
+                            <div class="flex w-full cursor-pointer items-center justify-between">
                               <p class="text-theme-xs font-medium text-gray-700 dark:text-gray-400">
-                                Age
+                                Phone
+                              </p>
+
+                              <span class="flex flex-col gap-0.5">
+                                <svg class="fill-gray-300 dark:fill-gray-700" width="8" height="5" viewBox="0 0 8 5"
+                                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M4.40962 0.585167C4.21057 0.300808 3.78943 0.300807 3.59038 0.585166L1.05071 4.21327C0.81874 4.54466 1.05582 5 1.46033 5H6.53967C6.94418 5 7.18126 4.54466 6.94929 4.21327L4.40962 0.585167Z"
+                                    fill=""></path>
+                                </svg>
+
+                                <svg class="fill-gray-300 dark:fill-gray-700" width="8" height="5" viewBox="0 0 8 5"
+                                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M4.40962 4.41483C4.21057 4.69919 3.78943 4.69919 3.59038 4.41483L1.05071 0.786732C0.81874 0.455343 1.05582 0 1.46033 0H6.53967C6.94418 0 7.18126 0.455342 6.94929 0.786731L4.40962 4.41483Z"
+                                    fill=""></path>
+                                </svg>
+                              </span>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 flex items-center border-r border-gray-200 px-4 py-3 dark:border-gray-800">
+                            <div class="flex w-full cursor-pointer items-center justify-between">
+                              <p class="text-theme-xs font-medium text-gray-700 dark:text-gray-400">
+                                Email
+                              </p>
+
+                              <span class="flex flex-col gap-0.5">
+                                <svg class="fill-gray-300 dark:fill-gray-700" width="8" height="5" viewBox="0 0 8 5"
+                                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M4.40962 0.585167C4.21057 0.300808 3.78943 0.300807 3.59038 0.585166L1.05071 4.21327C0.81874 4.54466 1.05582 5 1.46033 5H6.53967C6.94418 5 7.18126 4.54466 6.94929 4.21327L4.40962 0.585167Z"
+                                    fill=""></path>
+                                </svg>
+
+                                <svg class="fill-gray-300 dark:fill-gray-700" width="8" height="5" viewBox="0 0 8 5"
+                                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M4.40962 4.41483C4.21057 4.69919 3.78943 4.69919 3.59038 4.41483L1.05071 0.786732C0.81874 0.455343 1.05582 0 1.46033 0H6.53967C6.94418 0 7.18126 0.455342 6.94929 0.786731L4.40962 4.41483Z"
+                                    fill=""></path>
+                                </svg>
+                              </span>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 flex items-center border-r border-gray-200 px-4 py-3 dark:border-gray-800">
+                            <div class="flex w-full cursor-pointer items-center justify-between">
+                              <p class="text-theme-xs font-medium text-gray-700 dark:text-gray-400">
+                                Website
+                              </p>
+
+                              <span class="flex flex-col gap-0.5">
+                                <svg class="fill-gray-300 dark:fill-gray-700" width="8" height="5" viewBox="0 0 8 5"
+                                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M4.40962 0.585167C4.21057 0.300808 3.78943 0.300807 3.59038 0.585166L1.05071 4.21327C0.81874 4.54466 1.05582 5 1.46033 5H6.53967C6.94418 5 7.18126 4.54466 6.94929 4.21327L4.40962 0.585167Z"
+                                    fill=""></path>
+                                </svg>
+
+                                <svg class="fill-gray-300 dark:fill-gray-700" width="8" height="5" viewBox="0 0 8 5"
+                                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M4.40962 4.41483C4.21057 4.69919 3.78943 4.69919 3.59038 4.41483L1.05071 0.786732C0.81874 0.455343 1.05582 0 1.46033 0H6.53967C6.94418 0 7.18126 0.455342 6.94929 0.786731L4.40962 4.41483Z"
+                                    fill=""></path>
+                                </svg>
+                              </span>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 flex items-center border-r border-gray-200 px-4 py-3 dark:border-gray-800">
+                            <div class="flex w-full cursor-pointer items-center justify-between">
+                              <p class="text-theme-xs font-medium text-gray-700 dark:text-gray-400">
+                                TVA Rate
                               </p>
 
                               <span class="flex flex-col gap-0.5">
@@ -217,9 +268,9 @@
                           <div
                             class="col-span-2 flex items-center border-r border-gray-200 px-4 py-3 dark:border-gray-800">
                             <div class="flex w-full cursor-pointer items-center justify-between"
-                              @click="sortBy('startDate')">
+                              @click="sortBy('created_at')">
                               <p class="text-theme-xs font-medium text-gray-700 dark:text-gray-400">
-                                Start date
+                                Created at
                               </p>
 
                               <span class="flex flex-col gap-0.5">
@@ -239,33 +290,7 @@
                               </span>
                             </div>
                           </div>
-                          <div
-                            class="col-span-2 flex items-center border-r border-gray-200 px-4 py-3 dark:border-gray-800">
-                            <div class="flex w-full cursor-pointer items-center justify-between"
-                              @click="sortBy('salary')">
-                              <p class="text-theme-xs font-medium text-gray-700 dark:text-gray-400">
-                                Salary
-                              </p>
-
-                              <span class="flex flex-col gap-0.5">
-                                <svg class="fill-gray-300 dark:fill-gray-700" width="8" height="5" viewBox="0 0 8 5"
-                                  fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path
-                                    d="M4.40962 0.585167C4.21057 0.300808 3.78943 0.300807 3.59038 0.585166L1.05071 4.21327C0.81874 4.54466 1.05582 5 1.46033 5H6.53967C6.94418 5 7.18126 4.54466 6.94929 4.21327L4.40962 0.585167Z"
-                                    fill=""></path>
-                                </svg>
-
-                                <svg class="fill-gray-300 dark:fill-gray-700" width="8" height="5" viewBox="0 0 8 5"
-                                  fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path
-                                    d="M4.40962 4.41483C4.21057 4.69919 3.78943 4.69919 3.59038 4.41483L1.05071 0.786732C0.81874 0.455343 1.05582 0 1.46033 0H6.53967C6.94418 0 7.18126 0.455342 6.94929 0.786731L4.40962 4.41483Z"
-                                    fill=""></path>
-                                </svg>
-                              </span>
-                            </div>
-                          </div>
-                          <div
-                            class="col-span-1 flex items-center border-r border-gray-200 px-4 py-3 dark:border-gray-800">
+                          <div class="col-span-1 flex items-center px-4 py-[17.5px]">
                             <div class="flex w-full cursor-pointer items-center justify-between">
                               <p class="text-theme-xs font-medium text-gray-700 dark:text-gray-400">
                                 Action
@@ -294,33 +319,55 @@
                         <!-- table body start -->
                         <template x-for="person in paginatedData" :key="person.id">
                           <!-- table item -->
-                          <div class="grid grid-cols-12 border-t border-gray-100 dark:border-gray-800">
+                          <div class="grid grid-cols-16 border-t border-gray-100 dark:border-gray-800">
                             <div
                               class="col-span-2 flex items-center border-r border-gray-100 px-4 py-[17.5px] dark:border-gray-800">
-                              <p class="block text-theme-sm font-medium text-gray-800 dark:text-white/90"
-                                x-text="person.name">
-                                Lindsey Curtis
+                              <p class="block truncate max-w-[150px] text-theme-sm font-medium text-gray-800 dark:text-white/90"
+                                :title="person.name">
+                                <span x-text="person.name"></span>
                               </p>
                             </div>
                             <div
                               class="col-span-2 flex items-center border-r border-gray-100 px-4 py-[17.5px] dark:border-gray-800">
-                              <p class="text-theme-sm text-gray-700 dark:text-gray-400" x-text="person.position"></p>
+                              <p class="truncate max-w-[150px] text-theme-sm text-gray-700 dark:text-gray-400"
+                                :title="person.address">
+                                <span x-text="person.address"></span>
+                              </p>
                             </div>
                             <div
                               class="col-span-2 flex items-center border-r border-gray-100 px-4 py-[17.5px] dark:border-gray-800">
-                              <p class="text-theme-sm text-gray-700 dark:text-gray-400" x-text="person.office"></p>
-                            </div>
-                            <div
-                              class="col-span-1 flex items-center border-r border-gray-100 px-4 py-[17.5px] dark:border-gray-800">
-                              <p class="text-theme-sm text-gray-700 dark:text-gray-400" x-text="person.age"></p>
-                            </div>
-                            <div
-                              class="col-span-2 flex items-center border-r border-gray-100 px-4 py-[17.5px] dark:border-gray-800">
-                              <p class="text-theme-sm text-gray-700 dark:text-gray-400" x-text="person.startDate"></p>
+                              <p class="truncate max-w-[150px] text-theme-sm text-gray-700 dark:text-gray-400"
+                                :title="person.phone">
+                                <span x-text="person.phone"></span>
+                              </p>
                             </div>
                             <div
                               class="col-span-2 flex items-center border-r border-gray-100 px-4 py-[17.5px] dark:border-gray-800">
-                              <p class="text-theme-sm text-gray-700 dark:text-gray-400" x-text="person.salary"></p>
+                              <p class="truncate max-w-[150px] text-theme-sm text-gray-700 dark:text-gray-400"
+                                :title="person.email">
+                                <span x-text="person.email"></span>
+                              </p>
+                            </div>
+                            <div
+                              class="col-span-2 flex items-center border-r border-gray-100 px-4 py-[17.5px] dark:border-gray-800">
+                              <p class="truncate max-w-[150px] text-theme-sm text-gray-700 dark:text-gray-400"
+                                :title="person.website">
+                                <span x-text="person.website"></span>
+                              </p>
+                            </div>
+                            <div
+                              class="col-span-2 flex items-center border-r border-gray-100 px-4 py-[17.5px] dark:border-gray-800">
+                              <p class="truncate max-w-[150px] text-theme-sm text-gray-700 dark:text-gray-400"
+                                :title="person.tva_rate">
+                                <span x-text="person.tva_rate"></span>
+                              </p>
+                            </div>
+                            <div
+                              class="col-span-2 flex items-center border-r border-gray-100 px-4 py-[17.5px] dark:border-gray-800">
+                              <p class="truncate max-w-[150px] text-theme-sm text-gray-700 dark:text-gray-400"
+                                :title="person.created_at">
+                                <span x-text="person.created_at"></span>
+                              </p>
                             </div>
                             <div class="col-span-1 flex items-center px-4 py-[17.5px]">
                               <div class="flex w-full items-center gap-2">
@@ -385,7 +432,7 @@
                             <span
                               class="flex h-10 w-10 items-center justify-center rounded-lg text-sm font-medium text-gray-700 hover:bg-blue-500/[0.08] hover:text-brand-500 dark:text-gray-400 dark:hover:text-brand-500">...</span>
                           </template>
-                          
+
                           <!-- Last page button -->
                           <button x-show="totalPages > 1" @click="goToPage(totalPages)"
                             :class="currentPage === totalPages ? 'bg-blue-500/[0.08] text-brand-500' : 'text-gray-700 dark:text-gray-400'"
@@ -412,55 +459,37 @@
 
                   <script>
                     function dataTableTwo() {
+
                       return {
                         search: "",
                         sortColumn: "id",
                         sortDirection: "asc",
                         currentPage: 1,
                         perPage: 10,
-                        data: [
-                          { "id": 1, "name": "Lindsey Curtis", "position": "Sales Assistant", "office": "New York", "age": 33, "startDate": "12 Feb, 2027", "salary": "$168,500" },
-                          { "id": 2, "name": "Jacob Martinez", "position": "Marketing Manager", "office": "London", "age": 29, "startDate": "08 Mar, 2022", "salary": "$142,000" },
-                          { "id": 3, "name": "Sophia Turner", "position": "Developer", "office": "Tokyo", "age": 36, "startDate": "15 Jun, 2024", "salary": "$175,900" },
-                          { "id": 4, "name": "Ethan Brooks", "position": "Accountant", "office": "Sydney", "age": 41, "startDate": "03 May, 2023", "salary": "$152,300" },
-                          { "id": 5, "name": "Ava Bennett", "position": "HR Manager", "office": "Paris", "age": 30, "startDate": "19 Sep, 2021", "salary": "$138,000" },
-                          { "id": 6, "name": "Noah Russell", "position": "Support Engineer", "office": "Berlin", "age": 27, "startDate": "25 Jan, 2025", "salary": "$129,700" },
-                          { "id": 7, "name": "Mia Foster", "position": "UX Designer", "office": "Toronto", "age": 32, "startDate": "12 Apr, 2020", "salary": "$160,400" },
-                          { "id": 8, "name": "James Gray", "position": "Product Owner", "office": "New York", "age": 38, "startDate": "09 Aug, 2023", "salary": "$198,000" },
-                          { "id": 9, "name": "Ella Sanders", "position": "Business Analyst", "office": "London", "age": 34, "startDate": "06 Jul, 2022", "salary": "$147,500" },
-                          { "id": 10, "name": "William Morris", "position": "Project Manager", "office": "Tokyo", "age": 37, "startDate": "01 Mar, 2021", "salary": "$173,000" },
-                          { "id": 11, "name": "Isabella Diaz", "position": "Sales Assistant", "office": "Paris", "age": 31, "startDate": "11 Oct, 2024", "salary": "$126,500" },
-                          { "id": 12, "name": "Michael Hughes", "position": "Marketing Manager", "office": "Berlin", "age": 35, "startDate": "14 Nov, 2020", "salary": "$150,800" },
-                          { "id": 13, "name": "Charlotte Kelly", "position": "Developer", "office": "Sydney", "age": 28, "startDate": "29 Jan, 2023", "salary": "$165,700" },
-                          { "id": 14, "name": "Benjamin Price", "position": "Accountant", "office": "Toronto", "age": 40, "startDate": "04 Jun, 2021", "salary": "$155,000" },
-                          { "id": 15, "name": "Amelia Reed", "position": "HR Manager", "office": "New York", "age": 26, "startDate": "23 Dec, 2022", "salary": "$139,600" },
-                          { "id": 16, "name": "Lucas Ward", "position": "Support Engineer", "office": "London", "age": 30, "startDate": "17 Feb, 2025", "salary": "$134,400" },
-                          { "id": 17, "name": "Harper Morgan", "position": "UX Designer", "office": "Tokyo", "age": 33, "startDate": "02 Sep, 2020", "salary": "$161,200" },
-                          { "id": 18, "name": "Henry Cox", "position": "Product Owner", "office": "Paris", "age": 39, "startDate": "10 May, 2024", "salary": "$190,700" },
-                          { "id": 19, "name": "Evelyn Richardson", "position": "Business Analyst", "office": "Berlin", "age": 36, "startDate": "07 Oct, 2023", "salary": "$149,900" },
-                          { "id": 20, "name": "Daniel Patterson", "position": "Project Manager", "office": "Sydney", "age": 42, "startDate": "18 Jul, 2021", "salary": "$170,000" },
-                          { "id": 21, "name": "Abigail James", "position": "Sales Assistant", "office": "Toronto", "age": 29, "startDate": "13 Jan, 2022", "salary": "$128,300" },
-                          { "id": 22, "name": "Matthew Watson", "position": "Marketing Manager", "office": "New York", "age": 34, "startDate": "22 Mar, 2023", "salary": "$146,200" },
-                          { "id": 23, "name": "Emily Brooks", "position": "Developer", "office": "London", "age": 28, "startDate": "05 Apr, 2024", "salary": "$172,100" },
-                          { "id": 24, "name": "Jackson Bell", "position": "Accountant", "office": "Tokyo", "age": 31, "startDate": "20 Nov, 2022", "salary": "$158,000" },
-                          { "id": 25, "name": "Scarlett Rivera", "position": "HR Manager", "office": "Paris", "age": 27, "startDate": "26 Aug, 2025", "salary": "$141,700" },
-                          { "id": 26, "name": "Logan Torres", "position": "Support Engineer", "office": "Berlin", "age": 32, "startDate": "30 Dec, 2023", "salary": "$135,900" },
-                          { "id": 27, "name": "Victoria Hayes", "position": "UX Designer", "office": "Sydney", "age": 35, "startDate": "08 May, 2020", "salary": "$162,800" },
-                          { "id": 28, "name": "Sebastian Sanders", "position": "Product Owner", "office": "Toronto", "age": 38, "startDate": "19 Jun, 2022", "salary": "$189,500" },
-                          { "id": 29, "name": "Grace Long", "position": "Business Analyst", "office": "New York", "age": 33, "startDate": "27 Sep, 2021", "salary": "$144,000" },
-                          { "id": 30, "name": "Jack Edwards", "position": "Project Manager", "office": "London", "age": 40, "startDate": "14 Feb, 2020", "salary": "$168,200" },
-                          { "id": 31, "name": "Zoey Jenkins", "position": "Sales Assistant", "office": "Tokyo", "age": 25, "startDate": "11 Nov, 2024", "salary": "$123,400" },
-                          { "id": 32, "name": "Jayden Perry", "position": "Marketing Manager", "office": "Paris", "age": 30, "startDate": "01 Jan, 2025", "salary": "$144,800" },
-                          { "id": 33, "name": "Nora Hughes", "position": "Developer", "office": "Berlin", "age": 34, "startDate": "06 Apr, 2021", "salary": "$169,600" },
-                          { "id": 34, "name": "David Foster", "position": "Accountant", "office": "Sydney", "age": 39, "startDate": "23 Oct, 2023", "salary": "$156,100" },
-                          { "id": 35, "name": "Lily West", "position": "HR Manager", "office": "Toronto", "age": 31, "startDate": "15 Aug, 2022", "salary": "$143,300" },
-                          { "id": 36, "name": "Anthony Daniels", "position": "Support Engineer", "office": "New York", "age": 37, "startDate": "02 May, 2020", "salary": "$133,800" },
-                          { "id": 37, "name": "Chloe Griffin", "position": "UX Designer", "office": "London", "age": 29, "startDate": "12 Jul, 2023", "salary": "$159,400" },
-                          { "id": 38, "name": "Christopher Barnes", "position": "Product Owner", "office": "Tokyo", "age": 36, "startDate": "03 Jun, 2024", "salary": "$192,300" },
-                          { "id": 39, "name": "Hannah Armstrong", "position": "Business Analyst", "office": "Paris", "age": 33, "startDate": "17 Mar, 2022", "salary": "$148,200" },
-                          { "id": 40, "name": "Andrew Nichols", "position": "Project Manager", "office": "Berlin", "age": 42, "startDate": "07 Jan, 2023", "salary": "$171,500" }
-                        ],
+                        data: [],
 
+                        init() {
+                          fetch('http://localhost:8000/api/companies/')  // Update this if your endpoint is different
+                            .then(response => response.json())
+                            .then(data => {
+                              console.log("Employee data from backend:", data);
+                              // Optional: map fields if necessary (depending on your backend field names)
+                              this.data = data.map(emp => ({
+                                id: emp.id,
+                                name: emp.name,
+                                address: emp.address,
+                                phone: emp.phone,
+                                email: emp.email,
+                                website: emp.website,
+                                logo: emp.logo,
+                                tax_id: emp.tax_id,
+                                created_at: new Date(emp.created_at).toLocaleDateString(),
+                                updated_at: new Date(emp.updated_at).toLocaleDateString(),
+                                tva_rate: emp.tva_rate
+                              }));
+                            })
+                            .catch(error => console.error("Failed to load employee data:", error));
+                        },
                         get pagesAroundCurrent() {
                           let pages = [];
                           const startPage = Math.max(2, this.currentPage - 2);
@@ -478,8 +507,7 @@
                             .filter(
                               (person) =>
                                 person.name.toLowerCase().includes(searchLower) ||
-                                person.position.toLowerCase().includes(searchLower) ||
-                                person.office.toLowerCase().includes(searchLower),
+                                person.website.toLowerCase().includes(searchLower)
                             )
                             .sort((a, b) => {
                               let modifier = this.sortDirection === "asc" ? 1 : -1;

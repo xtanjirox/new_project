@@ -147,3 +147,5 @@ CORS_ALLOWED_ORIGINS = [
     "http://*",
     "https://*",
 ]
+
+FORMS_URLFIELD_ASSUME_HTTPS = True
